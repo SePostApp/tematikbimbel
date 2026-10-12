@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tematik Bimbel Education — Les Privat & Les Umum SD SMP Purbalingga</title>
+  <meta name="description" content="Tematik Bimbel Education: Les privat dan les umum SD & SMP di wilayah Purbalingga. Guru sabar & telaten. Tersedia paket 8, 10, dan 12 sesi/bulan. Pendaftaran GRATIS!">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f5fa',
+              100: '#e1ecf5',
+              200: '#c3d8eb',
+              600: '#1d4ed8',
+              700: '#1e40af',
+              800: '#1e3a8a',
+              900: '#0f2744',
+            },
+            accent: {
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            emerald: {
+              600: '#16a34a',
+              700: '#15803d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      color: #0f172a;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid #1e3a8a;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 selection:bg-brand-100 selection:text-brand-900 pb-20 md:pb-0">
+
+  <!-- ================= TOP NOTICE BAR ================= -->
+  <aside aria-label="Pengumuman" class="bg-brand-900 text-slate-100 text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>Wilayah Purbalingga & Sekitarnya: <strong>PENDAFTARAN GRATIS (Tanpa Biaya Registrasi)</strong></span>
+      <span class="hidden md:inline text-slate-300">• Les Privat & Les Umum SD - SMP</span>
+    </div>
+  </aside>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-10 h-10 rounded-xl bg-brand-900 flex items-center justify-center text-white font-extrabold text-base shadow-sm">
+          TB
+        </div>
+        <div>
+          <div class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 leading-none">Tematik Bimbel<span class="text-brand-700">.</span></div>
+          <div class="text-[11px] sm:text-xs text-slate-600 font-semibold tracking-wide">Education Purbalingga</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#solusi" class="hover:text-brand-700 transition-colors">Mengapa Kami</a>
+        <a href="#layanan" class="hover:text-brand-700 transition-colors">Pilihan Les</a>
+        <a href="#paket" class="hover:text-brand-700 transition-colors">Paket Sesi</a>
+        <a href="#testimoni" class="hover:text-brand-700 transition-colors">Kata Orang Tua</a>
+        <a href="#faq" class="hover:text-brand-700 transition-colors">Tanya Jawab</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%20Education%2C%20saya%20ingin%20konsultasi%20jadwal%20les%20wilayah%20Purbalingga" 
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.09-.177.188-.076.361.101.173.45 1.054 1.347 1.621.721.456 1.332.6 1.52.684.188.084.298.072.41-.058.112-.13.48-1.118.608-1.334.128-.216.257-.18.43-.116.173.064 1.098.518 1.286.612.188.094.313.141.36.222.047.081.047.472-.097.877z"/>
+          </svg>
+          <span>Chat WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative bg-slate-50 border-b border-slate-200 overflow-hidden pt-10 sm:pt-16 pb-14 sm:pb-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- Left: Headline & Core Pitch -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+            PENDAFTARAN GRATIS • Wilayah Purbalingga
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.18]">
+            Belajar Tenang Tanpa Drama PR.<br>
+            <span class="text-brand-800">Les Privat & Umum SD-SMP</span> di Purbalingga.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal max-w-xl">
+            Tutor telaten dan komunikatif mendampingi anak paham konsep pelajaran sekolah, tuntas PR harian, dan siap menghadapi ujian. Tersedia <strong>Les Privat (Guru ke Rumah)</strong> dan <strong>Les Umum (Kelompok Belajar)</strong>.
+          </p>
+
+          <!-- Core Badges -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs sm:text-sm font-medium text-slate-800">
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+              <span>Gratis Pendaftaran</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+              <span>Privat 1-on-1 & Kelompok</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+              <span>Pilihan 8, 10, 12 Sesi</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+            <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%20Education%2C%20saya%20mau%20konsultasi%20les%20anak%20saya%20wilayah%20Purbalingga" 
+               target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-center">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.09-.177.188-.076.361.101.173.45 1.054 1.347 1.621.721.456 1.332.6 1.52.684.188.084.298.072.41-.058.112-.13.48-1.118.608-1.334.128-.216.257-.18.43-.116.173.064 1.098.518 1.286.612.188.094.313.141.36.222.047.081.047.472-.097.877z"/>
+              </svg>
+              <span>Konsultasi & Cek Jadwal (WA)</span>
+            </a>
+            <a href="#paket" class="flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 font-semibold text-sm px-5 py-3.5 rounded-xl border border-slate-300 transition-colors">
+              Lihat Pilihan 3 Sesi Kelas
+            </a>
+          </div>
+
+          <p class="text-xs text-slate-600 flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            Tutor siap datang ke area Purbalingga Kota, Kalimanah, Padamara, Bobotsari, Bukateja, dsk.
+          </p>
+
+        </div>
+
+        <!-- Right: Realistic Visual Proof Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-lg shadow-slate-200/60 relative">
+            
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+              <div class="flex items-center gap-2.5">
+                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                <span class="text-xs font-semibold text-slate-600 ml-1">Laporan Belajar Tematik Bimbel</span>
+              </div>
+              <span class="text-[11px] font-medium bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-md">
+                Wilayah Purbalingga
+              </span>
+            </div>
+
+            <!-- WhatsApp Style Report Preview -->
+            <div class="space-y-3 text-xs sm:text-[13px] bg-slate-50 p-4 rounded-xl border border-slate-200/70">
+              <div class="flex items-center justify-between">
+                <div class="font-bold text-slate-800">Sesi Privat Matematika — Kelas 5 SD</div>
+                <div class="text-[10px] text-slate-600">Sore, 16:30 WIB</div>
+              </div>
+
+              <div class="space-y-1.5 text-slate-700 leading-relaxed border-t border-slate-200 pt-2">
+                <p><strong>Siswa:</strong> Fadhil (SD Negeri di Purbalingga)</p>
+                <p><strong>Materi:</strong> Pecahan Campuran & Penuntasan Tugas Sekolah</p>
+                <p><strong>Evaluasi:</strong> Fadhil sudah paham konsep KPK untuk menyamakan penyebut. PR 5 nomor selesai dikerjakan sendiri dengan lancar tanpa dibantu.</p>
+              </div>
+
+              <div class="bg-white p-2.5 rounded-lg border border-slate-200 text-slate-700 text-[11px] flex items-center justify-between">
+                <span>Respon Belajar: <strong>Ceria & Lebih Percaya Diri</strong></span>
+                <span class="text-amber-500 font-bold">★★★★★</span>
+              </div>
+            </div>
+
+            <!-- Parent quote snippet -->
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-start gap-3">
+              <div class="w-9 h-9 rounded-full bg-brand-100 text-brand-800 font-bold text-xs flex items-center justify-center shrink-0">
+                BA
+              </div>
+              <div>
+                <p class="text-xs text-slate-700 italic">"Biasanya kalau diajar sendiri suka ngambek. Sejak ikut les privat Tematik Bimbel, PR selalu beres tepat waktu dan nilai tugas naik."</p>
+                <p class="text-[11px] text-slate-600 font-semibold mt-1">Bunda Annisa — Orang Tua Siswa (Kalimanah, Purbalingga)</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SOLUSI UNTUK ORANG TUA ================= -->
+  <section id="solusi" class="py-14 sm:py-20 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-2xl text-left mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Kenapa Memilih Tematik Bimbel</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
+          Solusi Belajar Praktis Tanpa Bikin Pusing Orang Tua
+        </h2>
+        <p class="text-slate-700 text-sm sm:text-base mt-2">
+          Orang tua punya banyak kesibukan kerja dan rumah tangga. Kami hadir sebagai mitra pendamping belajar yang sabar dan terstruktur bagi putra-putri Ibu di Purbalingga.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+          <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-800 font-bold text-sm flex items-center justify-center mb-4">
+            01
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Tutor Telaten & Ramah</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Guru memahami cara mendekati anak SD dan SMP secara suportif. Menjelaskan rumus dan konsep dengan santai tanpa membuat anak tertekan.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+          <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
+            02
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Kurikulum Sekolah & PR Tuntas</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Menyesuaikan dengan materi Kurikulum Merdeka di sekolah Purbalingga. Tugas harian, asesmen berkala, dan persiapan ulangan didampingi hingga paham.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+          <div class="w-9 h-9 rounded-lg bg-amber-100 text-amber-800 font-bold text-sm flex items-center justify-center mb-4">
+            03
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Bebas Biaya Pendaftaran</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Tidak ada pungutan registrasi di awal. Orang tua cukup memilih paket sesi kelas yang sesuai dengan kebutuhan dan jadwal belajar anak.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= LAYANAN: LES PRIVAT & LES UMUM ================= -->
+  <section id="layanan" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Format Pembelajaran</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
+          Pilihan Model Belajar: Les Privat atau Les Umum
+        </h2>
+        <p class="text-slate-700 text-sm sm:text-base mt-2">
+          Sesuaikan dengan gaya belajar anak dan kenyamanan keluarga.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- CARD 1: LES PRIVAT -->
+        <div class="bg-white rounded-2xl border-2 border-brand-800/80 p-6 sm:p-8 flex flex-col justify-between shadow-sm relative">
+          <div class="absolute -top-3 right-6 bg-brand-800 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+            1 Guru 1 Murid
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold bg-brand-100 text-brand-800 px-3 py-1 rounded-full border border-brand-200">
+                Les Privat (Home Tutoring)
+              </span>
+              <span class="text-xs text-slate-600 font-medium">SD & SMP</span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+              Pendampingan Intensif 1-on-1 di Rumah
+            </h3>
+            
+            <p class="text-slate-700 text-sm leading-relaxed mb-6">
+              Guru datang langsung ke rumah Anda di wilayah Purbalingga. Fokus 100% pada anak Anda sehingga materi disesuaikan sepenuhnya dengan kecepatan belajarnya.
+            </p>
+
+            <div class="space-y-3 mb-6 text-sm">
+              <div class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+                <span class="text-slate-700">Perhatian penuh tutor tanpa distraksi murid lain</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+                <span class="text-slate-700">Jadwal belajar sangat fleksibel (pagi, sore, atau malam)</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+                <span class="text-slate-700">Orang tua bisa langsung memantau dari rumah</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-slate-100">
+            <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20tertarik%20tanya%20Les%20Privat%20ke%20rumah%20wilayah%20Purbalingga" 
+               target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-semibold text-sm py-3.5 px-4 rounded-xl transition-colors">
+              <span>Konsultasi Les Privat via WA →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: LES UMUM -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full border border-amber-200">
+                Les Umum (Kelompok Belajar)
+              </span>
+              <span class="text-xs text-slate-600 font-medium">SD & SMP</span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+              Belajar Seru Bersama Teman Sebaya
+            </h3>
+            
+            <p class="text-slate-700 text-sm leading-relaxed mb-6">
+              Cocok bagi anak yang lebih termotivasi dan senang belajar bersama teman-temannya dalam kelompok kecil yang kondusif dan interaktif.
+            </p>
+
+            <div class="space-y-3 mb-6 text-sm">
+              <div class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+                <span class="text-slate-700">Biaya per anak lebih hemat & ekonomis</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+                <span class="text-slate-700">Melatih interaksi sosial & diskusi pemecahan soal</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+                <span class="text-slate-700">Bisa mengajak teman sekelas/tetangga sekitar rumah</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-slate-100">
+            <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20tertarik%20tanya%20Les%20Umum%20kelompok%20wilayah%20Purbalingga" 
+               target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-3.5 px-4 rounded-xl transition-colors">
+              <span>Konsultasi Les Umum via WA →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 3 MACAM SESI KELAS ================= -->
+  <section id="paket" class="py-14 sm:py-20 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 font-bold">Pilihan Paket Sesi</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
+          3 Macam Sesi Kelas Fleksibel Tiap Bulan
+        </h2>
+        <p class="text-slate-700 text-sm sm:text-base mt-2">
+          Pilih intensitas belajar yang paling pas untuk target nilai dan waktu luang putra-putri Ibu di Purbalingga.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- PAKET 1: 8 SESI -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:border-slate-300 transition-all">
+          <div>
+            <div class="inline-block bg-slate-200 text-slate-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
+              Reguler Rutin
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-1">8 Sesi / Bulan</h3>
+            <p class="text-xs text-slate-600 mb-4 font-medium">± 2x Pertemuan per Minggu</p>
+            
+            <p class="text-sm text-slate-700 leading-relaxed mb-6">
+              Pilihan ideal untuk pendampingan belajar teratur, penuntasan PR sekolah setiap pekan, dan pemahaman konsep dasar mapel utama.
+            </p>
+
+            <ul class="space-y-2.5 text-xs text-slate-700 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Pendampingan PR & tugas harian
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Penguatan konsep mapel esensial
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Pendaftaran GRATIS
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20tertarik%20tanya%20jadwal%20paket%208%20sesi/bulan%20Purbalingga" 
+             target="_blank" rel="noopener noreferrer"
+             class="w-full text-center bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs py-3 px-4 rounded-xl border border-slate-300 transition-colors">
+            Pilih Paket 8 Sesi
+          </a>
+        </div>
+
+        <!-- PAKET 2: 10 SESI (RECOMMENDED) -->
+        <div class="bg-white rounded-2xl border-2 border-emerald-600 p-6 flex flex-col justify-between shadow-md relative">
+          <div class="absolute -top-3 right-6 bg-emerald-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+            Paling Diminati Orang Tua
+          </div>
+
+          <div>
+            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
+              Pilihan Terfavorit
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-1">10 Sesi / Bulan</h3>
+            <p class="text-xs text-emerald-700 mb-4 font-semibold">± 2 – 3x Pertemuan per Minggu</p>
+            
+            <p class="text-sm text-slate-700 leading-relaxed mb-6">
+              Kombinasi paling seimbang untuk menjaga konsistensi belajar, pendalaman rumus & latihan soal berulang agar anak semakin percaya diri.
+            </p>
+
+            <ul class="space-y-2.5 text-xs text-slate-700 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Semua manfaat paket 8 sesi
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Latihan soal berkala & bedah PR
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Evaluasi perkembangan belajar rutin
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Pendaftaran GRATIS
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20tertarik%20tanya%20jadwal%20paket%2010%20sesi/bulan%20Purbalingga" 
+             target="_blank" rel="noopener noreferrer"
+             class="w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 rounded-xl shadow-xs transition-colors">
+            Pilih Paket 10 Sesi (Rekomendasi)
+          </a>
+        </div>
+
+        <!-- PAKET 3: 12 SESI -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:border-slate-300 transition-all">
+          <div>
+            <div class="inline-block bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
+              Intensif Maksimal
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-1">12 Sesi / Bulan</h3>
+            <p class="text-xs text-slate-600 mb-4 font-medium">± 3x Pertemuan per Minggu</p>
+            
+            <p class="text-sm text-slate-700 leading-relaxed mb-6">
+              Sangat direkomendasikan untuk anak yang perlu mengejar ketertinggalan nilai, persiapan intensif PTS/PAS, atau ujian kelulusan SD & SMP.
+            </p>
+
+            <ul class="space-y-2.5 text-xs text-slate-700 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Pendampingan intensif & tryout soal
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Target percepatan kenaikan nilai rapor
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Pendaftaran GRATIS
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20tertarik%20tanya%20jadwal%20paket%2012%20sesi/bulan%20Purbalingga" 
+             target="_blank" rel="noopener noreferrer"
+             class="w-full text-center bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs py-3 px-4 rounded-xl border border-slate-300 transition-colors">
+            Pilih Paket 12 Sesi
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200 max-w-2xl mx-auto">
+        💡 <em>Catatan:</em> Durasi standar setiap sesi adalah 90 menit. Jadwal dapat disesuaikan dengan waktu kosong anak di hari kerja (Senin–Jumat) maupun akhir pekan (Sabtu–Minggu).
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONI ORANG TUA ================= -->
+  <section id="testimoni" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-700 font-bold">Ulasan Orang Tua</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
+          Cerita Orang Tua Siswa di Purbalingga
+        </h2>
+        <p class="text-slate-700 text-sm mt-2">
+          Kenyamanan anak dan ketenangan orang tua adalah bukti nyata komitmen kami.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 flex flex-col justify-between shadow-xs">
+          <div class="space-y-3">
+            <div class="flex items-center gap-1 text-amber-500 text-xs">
+              ★★★★★ <span class="text-slate-600 text-[11px] ml-1 font-medium">• Siswa Kelas 4 SD</span>
+            </div>
+            
+            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs leading-relaxed text-slate-700">
+              "Alhamdulillah, sejak les privat di Tematik Bimbel anak saya jadi lebih mandiri. Kalau ada PR matematika langsung dikerjakan bareng tutornya. Gurunya telaten banget nerangin pecahan."
+            </div>
+          </div>
+
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs flex items-center justify-center">
+              BU
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Bunda Utami</div>
+              <div class="text-[11px] text-slate-600">Bojongsari, Purbalingga</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 flex flex-col justify-between shadow-xs">
+          <div class="space-y-3">
+            <div class="flex items-center gap-1 text-amber-500 text-xs">
+              ★★★★★ <span class="text-slate-600 text-[11px] ml-1 font-medium">• Siswa Kelas 8 SMP</span>
+            </div>
+            
+            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs leading-relaxed text-slate-700">
+              "Anak saya tadinya takut sama IPA fisika rumus-rumus. Ambil paket 10 sesi sebulan, cara ngajarnya asik kayak kakak sendiri. Ulangan harian kemarin nilainya tembus 85."
+            </div>
+          </div>
+
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-800 font-bold text-xs flex items-center justify-center">
+              PR
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Pak Rahmat</div>
+              <div class="text-[11px] text-slate-600">Padamara, Purbalingga</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 flex flex-col justify-between shadow-xs">
+          <div class="space-y-3">
+            <div class="flex items-center gap-1 text-amber-500 text-xs">
+              ★★★★★ <span class="text-slate-600 text-[11px] ml-1 font-medium">• Siswa Kelas 6 SD</span>
+            </div>
+            
+            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs leading-relaxed text-slate-700">
+              "Ikut les umum kelompok bertiga bareng temen sekelasnya di Bobotsari. Anak-anak semangat belajarnya dan biayanya juga sangat terjangkau. Pendaftarannya beneran gratis."
+            </div>
+          </div>
+
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center">
+              MS
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Mama Sinta</div>
+              <div class="text-[11px] text-slate-600">Bobotsari, Purbalingga</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="py-14 sm:py-20 bg-white border-b border-slate-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Tanya Jawab</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
+          Pertanyaan yang Sering Diajukan
+        </h2>
+        <p class="text-slate-700 text-sm mt-2">
+          Informasi transparan seputar pendaftaran les di Tematik Bimbel Education.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faq-container">
+        
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+            <span>Apakah benar pendaftaran gratis tanpa biaya tambahan?</span>
+            <span class="faq-icon text-slate-600 text-xl font-light transform transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 py-4 text-xs sm:text-sm text-slate-700 leading-relaxed bg-white border-t border-slate-100">
+            Ya, betul! Pendaftaran 100% GRATIS tanpa biaya formulir atau biaya registrasi awal. Anda hanya membayar biaya paket sesi kelas yang Anda pilih.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+            <span>Wilayah mana saja di Purbalingga yang bisa dijangkau guru les privat?</span>
+            <span class="faq-icon text-slate-600 text-xl font-light transform transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 py-4 text-xs sm:text-sm text-slate-700 leading-relaxed bg-white border-t border-slate-100">
+            Kami melayani wilayah Purbalingga Kota, Kalimanah, Padamara, Bojongsari, Kutasari, Kemangkon, Bukateja, Bobotsari, dan kecamatan sekitarnya. Silakan konsultasikan alamat rumah Anda via WhatsApp untuk ketersediaan jadwal tutor terdekat.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+            <span>Mata pelajaran apa saja yang bisa didampingi?</span>
+            <span class="faq-icon text-slate-600 text-xl font-light transform transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 py-4 text-xs sm:text-sm text-slate-700 leading-relaxed bg-white border-t border-slate-100">
+            Untuk jenjang SD: Semua mata pelajaran tematik kurikulum sekolah, Calistung ceria, Matematika dasar, IPA, dan Bahasa Inggris. Untuk jenjang SMP: Fokus Matematika (Aljabar & Geometri), IPA Terpadu (Fisika & Biologi), Bahasa Inggris, dan pendampingan persiapan ujian sekolah.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors">
+            <span>Bagaimana jika anak mendadak berhalangan pada jadwal les?</span>
+            <span class="faq-icon text-slate-600 text-xl font-light transform transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 py-4 text-xs sm:text-sm text-slate-700 leading-relaxed bg-white border-t border-slate-100">
+            Jadwal dapat di-reschedule (diganti waktu lain) dengan mengabari pihak pengajar atau admin sebelum sesi dimulai agar sesi belajar tidak hangus.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CLOSING CTA SECTION ================= -->
+  <section class="py-16 sm:py-24 bg-brand-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 space-y-6">
+      
+      <div class="inline-flex items-center gap-2 bg-amber-400 text-slate-950 text-xs font-bold px-4 py-1.5 rounded-full">
+        PENDAFTARAN GRATIS • KUOTA TUTOR TERBATAS
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+        Daftarkan Putra-Putri Anda di<br class="hidden sm:inline"> Tematik Bimbel Education Sekarang
+      </h2>
+
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        Pilih paket les privat atau les umum (8, 10, atau 12 sesi/bulan) untuk wilayah Purbalingga. Konsultasikan kebutuhan belajar anak langsung dengan admin kami via WhatsApp.
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%20Education%2C%20saya%20ingin%20daftar%20les%20anak%20wilayah%20Purbalingga" 
+           target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.09-.177.188-.076.361.101.173.45 1.054 1.347 1.621.721.456 1.332.6 1.52.684.188.084.298.072.41-.058.112-.13.48-1.118.608-1.334.128-.216.257-.18.43-.116.173.064 1.098.518 1.286.612.188.094.313.141.36.222.047.081.047.472-.097.877z"/>
+          </svg>
+          <span>Daftar via WhatsApp (0882-0039-88016)</span>
+        </a>
+      </div>
+
+      <div class="text-xs text-slate-300 pt-2">
+        Hubungi WhatsApp: <strong>0882-0039-88016</strong> • Bebas Biaya Registrasi
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-900 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="text-center md:text-left">
+        <div class="font-bold text-slate-200 text-sm">Tematik Bimbel Education</div>
+        <div class="mt-1 text-slate-300">Les Privat & Les Umum SD - SMP Wilayah Purbalingga</div>
+        <div class="mt-0.5 text-slate-300">WhatsApp Resmi: 0882-0039-88016</div>
+      </div>
+
+      <div class="text-center md:text-right text-slate-300">
+        <div>© 2026 Tematik Bimbel Education. Hak cipta dilindungi.</div>
+        <div class="mt-1">Pilihan 8, 10, & 12 Sesi/Bulan • Pendaftaran Gratis</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= STICKY MOBILE BOTTOM BAR ================= -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 p-3 sm:hidden shadow-xl flex items-center justify-between gap-3">
+    <div class="text-left pl-1">
+      <div class="text-[11px] text-amber-700 font-bold">PENDAFTARAN GRATIS</div>
+      <div class="text-xs font-extrabold text-slate-900">Tematik Bimbel Purbalingga</div>
+    </div>
+    <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20mau%20tanya%20les%20SD/SMP%20Purbalingga" 
+       target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center gap-2 bg-emerald-600 active:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-full shadow-sm">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.09-.177.188-.076.361.101.173.45 1.054 1.347 1.621.721.456 1.332.6 1.52.684.188.084.298.072.41-.058.112-.13.48-1.118.608-1.334.128-.216.257-.18.43-.116.173.064 1.098.518 1.286.612.188.094.313.141.36.222.047.081.047.472-.097.877z"/></svg>
+      <span>Chat WA Admin</span>
+    </a>
+  </div>
+
+  <!-- ================= FLOATING DESKTOP WHATSAPP ================= -->
+  <aside id="floating-wa" aria-label="Bantuan WhatsApp" class="hidden sm:block fixed bottom-6 right-6 z-50 transition-all duration-300 opacity-0 pointer-events-none translate-y-3">
+    <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20mau%20tanya%20jadwal%20les%20wilayah%20Purbalingga" 
+       target="_blank" rel="noopener noreferrer"
+       class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.09-.177.188-.076.361.101.173.45 1.054 1.347 1.621.721.456 1.332.6 1.52.684.188.084.298.072.41-.058.112-.13.48-1.118.608-1.334.128-.216.257-.18.43-.116.173.064 1.098.518 1.286.612.188.094.313.141.36.222.047.081.047.472-.097.877z"/>
+      </svg>
+      <span>Tanya via WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // FAQ Accordion interaction
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+        
+        // Close other FAQs
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => {
+          i.textContent = '+';
+        });
+        
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.textContent = '×';
+        } else {
+          content.classList.add('hidden');
+          icon.textContent = '+';
+        }
+      });
+    });
+
+    // Smooth show/hide for floating desktop WhatsApp button
+    const floatingWa = document.getElementById('floating-wa');
+    if (floatingWa) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 320) {
+          floatingWa.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+          floatingWa.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        } else {
+          floatingWa.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+          floatingWa.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
