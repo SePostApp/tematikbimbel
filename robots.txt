@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tematikbimbel.my.id/sitemap.xml
