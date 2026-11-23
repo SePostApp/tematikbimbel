@@ -30,10 +30,10 @@
   <meta name="twitter:description" content="Les matematika SD dan SMP di Purbalingga. Metode belajar logika menyenangkan tanpa hafal rumus rumit. Tutor sabar datang ke rumah & kelompok.">
   <meta name="twitter:image" content="https://tematikbimbel.my.id/og-image.svg">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Plus Jakarta Sans + Caveat (aksen tulisan tangan) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,24 +43,24 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            hand: ['Caveat', 'cursive'],
           },
           colors: {
             brand: {
-              50: '#f0f5fa',
-              100: '#e1ecf5',
-              200: '#c3d8eb',
-              600: '#1d4ed8',
-              700: '#1e40af',
-              800: '#1e3a8a',
-              900: '#0f2744',
+              50: '#eef7ff',
+              100: '#d9edff',
+              200: '#b5dcff',
+              300: '#85c6ff',
+              400: '#4da6f5',
+              500: '#2686dd',
+              600: '#1873c4',
+              700: '#155fa3',
+              800: '#134e85',
+              900: '#0f3a63',
             },
             accent: {
-              500: '#f59e0b',
-              600: '#d97706',
-            },
-            emerald: {
-              600: '#16a34a',
-              700: '#15803d',
+              500: '#f28c28',
+              600: '#de7512',
             }
           }
         }
@@ -76,8 +76,13 @@
       -webkit-font-smoothing: antialiased;
     }
     a:focus-visible, button:focus-visible {
-      outline: 2px solid #1e3a8a;
+      outline: 2px solid #155fa3;
       outline-offset: 2px;
+    }
+    /* Tekstur garis buku tulis untuk hero — ciri khas Tematik, bukan template generik */
+    .hero-notebook {
+      background-color: #f4faff;
+      background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(24, 115, 196, 0.08) 31px, rgba(24, 115, 196, 0.08) 32px);
     }
   </style>
 
@@ -222,7 +227,7 @@
   </div>
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative bg-slate-50 border-b border-slate-200 overflow-hidden pt-10 sm:pt-14 pb-14 sm:pb-16">
+  <section class="relative hero-notebook border-b border-brand-100 overflow-hidden pt-10 sm:pt-14 pb-14 sm:pb-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="max-w-3xl space-y-5 text-left">
@@ -274,7 +279,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="max-w-2xl text-left mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Metode &amp; Kualitas</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Metode &amp; Kualitas</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Keunggulan Layanan untuk Siswa Purbalingga
         </h2>
@@ -315,7 +320,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Cakupan Kurikulum</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Cakupan Kurikulum</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Materi Spesialisasi Les Matematika
         </h2>
@@ -406,7 +411,7 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Tanya Jawab</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Tanya Jawab</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Pertanyaan Seputar Layanan Ini
         </h2>
@@ -484,7 +489,7 @@
             <span class="font-bold text-slate-200 text-base">Tematik Bimbel Education</span>
           </div>
           <p class="text-slate-400 leading-relaxed text-xs">
-            Lembaga bimbingan belajar dan les privat terpercaya untuk siswa SD &amp; SMP di wilayah Kabupaten Purbalingga. Guru sabar, telaten, dan komunikatif siap datang ke rumah Anda.
+            Bimbingan belajar dan les privat untuk siswa SD &amp; SMP di Kabupaten Purbalingga. Tutor datang ke rumah, 90 menit per sesi, dan setiap pertemuan ditutup dengan laporan belajar ke WhatsApp orang tua.
           </p>
           <div class="text-slate-300 text-xs pt-1">
             <strong>Kontak WhatsApp:</strong> <a href="https://wa.me/62882003988016" class="text-emerald-400 hover:underline">0882-0039-88016</a><br>

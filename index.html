@@ -133,10 +133,10 @@
   }
   </script>
   
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Plus Jakarta Sans + Caveat (aksen tulisan tangan) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -146,24 +146,24 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            hand: ['Caveat', 'cursive'],
           },
           colors: {
             brand: {
-              50: '#f0f5fa',
-              100: '#e1ecf5',
-              200: '#c3d8eb',
-              600: '#1d4ed8',
-              700: '#1e40af',
-              800: '#1e3a8a',
-              900: '#0f2744',
+              50: '#eef7ff',
+              100: '#d9edff',
+              200: '#b5dcff',
+              300: '#85c6ff',
+              400: '#4da6f5',
+              500: '#2686dd',
+              600: '#1873c4',
+              700: '#155fa3',
+              800: '#134e85',
+              900: '#0f3a63',
             },
             accent: {
-              500: '#f59e0b',
-              600: '#d97706',
-            },
-            emerald: {
-              600: '#16a34a',
-              700: '#15803d',
+              500: '#f28c28',
+              600: '#de7512',
             }
           }
         }
@@ -180,8 +180,13 @@
     }
     
     a:focus-visible, button:focus-visible {
-      outline: 2px solid #1e3a8a;
+      outline: 2px solid #155fa3;
       outline-offset: 2px;
+    }
+    /* Tekstur garis buku tulis untuk hero — ciri khas Tematik, bukan template generik */
+    .hero-notebook {
+      background-color: #f4faff;
+      background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(24, 115, 196, 0.08) 31px, rgba(24, 115, 196, 0.08) 32px);
     }
   </style>
 </head>
@@ -235,7 +240,7 @@
   </header>
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative bg-slate-50 border-b border-slate-200 overflow-hidden pt-10 sm:pt-16 pb-14 sm:pb-20">
+  <section class="relative hero-notebook border-b border-brand-100 overflow-hidden pt-10 sm:pt-16 pb-14 sm:pb-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
@@ -249,12 +254,12 @@
           </div>
 
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.18]">
-            Belajar Tenang Tanpa Drama PR.<br>
+            Belajar Tenang <span class="underline decoration-accent-500 decoration-wavy underline-offset-8">Tanpa Drama PR</span>.<br>
             <span class="text-brand-800">Les Privat & Umum SD-SMP</span> di Purbalingga.
           </h1>
 
           <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal max-w-xl">
-            Tutor telaten dan komunikatif mendampingi anak paham konsep pelajaran sekolah, tuntas PR harian, dan siap menghadapi ujian. Tersedia <strong>Les Privat (Guru ke Rumah)</strong> dan <strong>Les Umum (Kelompok Belajar)</strong>.
+            Setiap sesi 90 menit: anak dibimbing paham konsep pelajaran, PR hari itu tuntas, dan orang tua menerima laporan belajar lewat WhatsApp. Pilih <strong>Les Privat (Guru ke Rumah)</strong> atau <strong>Les Umum (Kelompok Belajar)</strong> — jadwal menyesuaikan sekolah anak.
           </p>
 
           <!-- Core Badges -->
@@ -295,8 +300,12 @@
 
         </div>
 
-        <!-- Right: Realistic Visual Proof Card -->
+        <!-- Right: Mascot + Realistic Visual Proof Card -->
         <div class="lg:col-span-5">
+          <div class="flex items-end gap-3 mb-4 pl-1">
+            <img src="/logo.svg" alt="Maskot burung hantu Tematik Bimbel" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl shadow-md shadow-brand-100 -rotate-3" width="80" height="80">
+            <p class="font-hand text-2xl sm:text-[28px] leading-tight text-brand-800 -rotate-2">Halo, aku maskot Tematik!<br>PR beres, belajarnya tetap ceria.</p>
+          </div>
           <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-lg shadow-slate-200/60 relative">
             
             <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
@@ -354,7 +363,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="max-w-2xl text-left mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Kenapa Memilih Tematik Bimbel</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Kenapa Memilih Tematik Bimbel</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Solusi Belajar Praktis Tanpa Bikin Pusing Orang Tua
         </h2>
@@ -405,7 +414,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Format Pembelajaran</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Format Pembelajaran</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Pilihan Model Belajar: Les Privat atau Les Umum
         </h2>
@@ -516,7 +525,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Spesialisasi Program Belajar</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Spesialisasi Program Belajar</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Program Bimbel &amp; Les Privat Terarah di Purbalingga
         </h2>
@@ -775,12 +784,15 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700 font-bold">Ulasan Orang Tua</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Ulasan Orang Tua</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Cerita Orang Tua Siswa di Purbalingga
         </h2>
         <p class="text-slate-700 text-sm mt-2">
-          Kenyamanan anak dan ketenangan orang tua adalah bukti nyata komitmen kami.
+          Tentang PR yang akhirnya beres, nilai tugas yang naik, dan anak yang lebih berani bertanya di kelas.
+        </p>
+        <p class="text-xs text-slate-500 mt-3">
+          Nama orang tua kami samarkan demi privasi keluarga — isi cerita sesuai pengalaman mereka selama mendampingi anak les di Tematik Bimbel.
         </p>
       </div>
 
@@ -862,7 +874,7 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Tanya Jawab</span>
+        <span class="font-hand text-[26px] leading-none text-accent-600">Tanya Jawab</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Pertanyaan yang Sering Diajukan
         </h2>
@@ -965,7 +977,7 @@
             <span class="font-bold text-slate-200 text-base">Tematik Bimbel Education</span>
           </div>
           <p class="text-slate-400 leading-relaxed text-xs">
-            Lembaga bimbingan belajar dan les privat terpercaya untuk siswa SD &amp; SMP di wilayah Kabupaten Purbalingga. Guru sabar, telaten, dan komunikatif siap datang ke rumah Anda.
+            Bimbingan belajar dan les privat untuk siswa SD &amp; SMP di Kabupaten Purbalingga. Tutor datang ke rumah, 90 menit per sesi, dan setiap pertemuan ditutup dengan laporan belajar ke WhatsApp orang tua.
           </p>
           <div class="text-slate-300 text-xs pt-1">
             <strong>Kontak WhatsApp:</strong> <a href="https://wa.me/62882003988016" class="text-emerald-400 hover:underline">0882-0039-88016</a><br>
