@@ -80,6 +80,12 @@
     img {
       height: auto;
     }
+    .paket-scroll {
+      scrollbar-width: none;
+    }
+    .paket-scroll::-webkit-scrollbar {
+      display: none;
+    }
     section[id] {
       scroll-margin-top: 88px;
     }
@@ -192,7 +198,7 @@
   }
   </script>
 </head>
-<body class="bg-white text-slate-900 selection:bg-brand-100 selection:text-brand-900 pb-20 md:pb-0">
+<body class="bg-white text-slate-900 selection:bg-brand-100 selection:text-brand-900 pb-24 md:pb-0">
 
   <!-- ================= TOP NOTICE BAR ================= -->
   <aside aria-label="Pengumuman" class="bg-brand-900 text-slate-100 text-xs sm:text-sm py-2 px-4 text-center font-medium">
@@ -370,7 +376,7 @@
   </section>
 
   <!-- ================= PAKET SESI (8, 10, 12 SESI) ================= -->
-  <section id="paket" class="py-14 sm:py-20 bg-white border-b border-slate-100">
+  <section id="paket" class="py-14 sm:py-20 bg-brand-50 border-b border-brand-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="max-w-2xl text-left mb-12">
@@ -383,13 +389,13 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+      <div class="paket-scroll flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 items-stretch md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0">
         
-        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col justify-between">
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between w-[85%] snap-center shrink-0 md:w-auto">
           <div>
             <div class="inline-block bg-slate-200 text-slate-800 text-xs font-bold px-3 py-1 rounded-full mb-4">Reguler</div>
-            <h3 class="text-2xl font-extrabold text-slate-900 mb-1">8 Sesi / Bulan</h3>
-            <p class="text-xs text-slate-600 mb-4">&plusmn; 2x Pertemuan per Minggu</p>
+            <h3 class="font-extrabold text-slate-900 mb-1"><span class="text-[34px] leading-none">8 Sesi</span> <span class="text-sm font-semibold text-slate-500">/ Bulan</span></h3>
+            <p class="text-sm text-slate-500 mb-5 font-medium">&plusmn; 2x Pertemuan per Minggu</p>
             <p class="text-sm text-slate-700 mb-6">Pendampingan rutin PR harian dan pemahaman konsep dasar materi sekolah.</p>
           </div>
           <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20ingin%20konsultasi%20bimbel%20SMP%20wilayah%20Purbalingga%20(Paket%208%20Sesi)" target="_blank" rel="noopener noreferrer"
@@ -398,25 +404,25 @@
           </a>
         </div>
 
-        <div class="bg-white rounded-2xl border-2 border-emerald-600 p-6 flex flex-col justify-between shadow-md relative">
-          <div class="absolute -top-3 right-6 bg-emerald-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase">Paling Diminati</div>
+        <div class="bg-white rounded-2xl border-2 border-brand-600 p-6 flex flex-col justify-between shadow-lg relative z-10 md:scale-[1.03] w-[85%] snap-center shrink-0 md:w-auto">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-accent-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Paling Diminati</div>
           <div>
-            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">Terfavorit</div>
-            <h3 class="text-2xl font-extrabold text-slate-900 mb-1">10 Sesi / Bulan</h3>
-            <p class="text-xs text-emerald-700 mb-4 font-semibold">&plusmn; 2–3x Pertemuan per Minggu</p>
+            <div class="inline-block bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full mb-4">Terfavorit</div>
+            <h3 class="font-extrabold text-slate-900 mb-1"><span class="text-[34px] leading-none">10 Sesi</span> <span class="text-sm font-semibold text-slate-500">/ Bulan</span></h3>
+            <p class="text-sm text-brand-700 mb-5 font-semibold">&plusmn; 2–3x Pertemuan per Minggu</p>
             <p class="text-sm text-slate-700 mb-6">Kombinasi ideal untuk mengulang rumus rumit, drilling soal, dan evaluasi berkala.</p>
           </div>
           <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20ingin%20konsultasi%20bimbel%20SMP%20wilayah%20Purbalingga%20(Paket%2010%20Sesi)" target="_blank" rel="noopener noreferrer"
-             class="w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 rounded-xl shadow-xs transition-colors">
+             class="w-full text-center bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-colors">
             Pilih Paket 10 Sesi (Rekomendasi)
           </a>
         </div>
 
-        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col justify-between">
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between w-[85%] snap-center shrink-0 md:w-auto">
           <div>
             <div class="inline-block bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full mb-4">Intensif</div>
-            <h3 class="text-2xl font-extrabold text-slate-900 mb-1">12 Sesi / Bulan</h3>
-            <p class="text-xs text-slate-600 mb-4">&plusmn; 3x Pertemuan per Minggu</p>
+            <h3 class="font-extrabold text-slate-900 mb-1"><span class="text-[34px] leading-none">12 Sesi</span> <span class="text-sm font-semibold text-slate-500">/ Bulan</span></h3>
+            <p class="text-sm text-slate-500 mb-5 font-medium">&plusmn; 3x Pertemuan per Minggu</p>
             <p class="text-sm text-slate-700 mb-6">Persiapan intensif ulangan umum, asesmen sekolah, atau mengejar ketertinggalan nilai.</p>
           </div>
           <a href="https://wa.me/62882003988016?text=Halo%20Tematik%20Bimbel%2C%20saya%20ingin%20konsultasi%20bimbel%20SMP%20wilayah%20Purbalingga%20(Paket%2012%20Sesi)" target="_blank" rel="noopener noreferrer"
