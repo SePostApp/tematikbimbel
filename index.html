@@ -183,6 +183,19 @@
     img {
       height: auto;
     }
+    section[id] {
+      scroll-margin-top: 88px;
+    }
+    ::selection {
+      background: #fbd9ae;
+      color: #0f3a63;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
     body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       color: #0f172a;
@@ -381,8 +394,8 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
-          <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-800 font-bold text-sm flex items-center justify-center mb-4">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80">
+          <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
             01
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Tutor Telaten & Ramah</h3>
@@ -391,7 +404,7 @@
           </p>
         </div>
 
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80">
           <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
             02
           </div>
@@ -401,8 +414,8 @@
           </p>
         </div>
 
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
-          <div class="w-9 h-9 rounded-lg bg-amber-100 text-amber-800 font-bold text-sm flex items-center justify-center mb-4">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80">
+          <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
             03
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Bebas Biaya Pendaftaran</h3>
@@ -420,7 +433,7 @@
   <section id="layanan" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="max-w-2xl text-left mb-12">
         <span class="font-hand text-[26px] leading-none text-accent-600">Format Pembelajaran</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Pilihan Model Belajar: Les Privat atau Les Umum
@@ -546,7 +559,7 @@
         <!-- Pillar 1: Les Privat Purbalingga -->
         <article class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-700 transition-all flex flex-col justify-between group shadow-xs">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-brand-900 group-hover:text-white transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-brand-700 group-hover:text-white transition-colors">
               LP
             </div>
             <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
@@ -558,9 +571,9 @@
               Guru datang langsung ke rumah Anda di wilayah Purbalingga Kota, Kalimanah, Padamara, dsk. Pendampingan personal 1-on-1 dengan jadwal fleksibel.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Guru datang ke rumah</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> 100% fokus perorangan</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Evaluasi tiap sesi</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Guru datang ke rumah</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 100% fokus perorangan</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Evaluasi tiap sesi</li>
             </ul>
           </div>
           <a href="/les-privat-purbalingga/" class="inline-flex items-center justify-between text-xs font-bold text-brand-800 hover:text-brand-900 pt-3 border-t border-slate-200">
@@ -572,7 +585,7 @@
         <!-- Pillar 2: Bimbel SD Purbalingga -->
         <article class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-700 transition-all flex flex-col justify-between group shadow-xs">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-brand-700 group-hover:text-white transition-colors">
               SD
             </div>
             <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
@@ -584,9 +597,9 @@
               Pendampingan kelas 1 sampai 6 SD: Calistung menyenangkan, penuntasan PR tematik Kurikulum Merdeka, dan persiapan ujian sekolah dasar.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Fondasi Calistung &amp; Logika</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Tuntas PR sekolah tiap hari</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Tutor ramah &amp; telaten</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Fondasi Calistung &amp; Logika</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Tuntas PR sekolah tiap hari</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Tutor ramah &amp; telaten</li>
             </ul>
           </div>
           <a href="/bimbel-sd-purbalingga/" class="inline-flex items-center justify-between text-xs font-bold text-brand-800 hover:text-brand-900 pt-3 border-t border-slate-200">
@@ -598,7 +611,7 @@
         <!-- Pillar 3: Bimbel SMP Purbalingga -->
         <article class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-700 transition-all flex flex-col justify-between group shadow-xs">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-900 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-emerald-700 group-hover:text-white transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-brand-700 group-hover:text-white transition-colors">
               SMP
             </div>
             <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
@@ -610,9 +623,9 @@
               Bimbingan khusus siswa kelas 7–9 SMP untuk mapel hitungan &amp; penalaran: Matematika, IPA Fisika-Biologi, dan persiapan asesmen ujian.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Bedah Aljabar &amp; IPA Fisika</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Persiapan PTS, PAS, &amp; Asesmen</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Target ranking &amp; nilai rapor</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Bedah Aljabar &amp; IPA Fisika</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Persiapan PTS, PAS, &amp; Asesmen</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Target ranking &amp; nilai rapor</li>
             </ul>
           </div>
           <a href="/bimbel-smp-purbalingga/" class="inline-flex items-center justify-between text-xs font-bold text-brand-800 hover:text-brand-900 pt-3 border-t border-slate-200">
@@ -624,7 +637,7 @@
         <!-- Pillar 4: Les Matematika Purbalingga -->
         <article class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-700 transition-all flex flex-col justify-between group shadow-xs">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-900 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-brand-800 group-hover:text-white transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-base mb-4 group-hover:bg-brand-700 group-hover:text-white transition-colors">
               MTK
             </div>
             <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
@@ -636,9 +649,9 @@
               Solusi tuntas untuk anak yang takut atau kesulitan belajar matematika. Fokus pada konsep esensial langkah demi langkah tanpa rasa takut salah.
             </p>
             <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Paham logika bukan hafal rumus</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Latihan bertahap mudah ke sulit</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Anak jauh lebih percaya diri</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Paham logika bukan hafal rumus</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Latihan bertahap mudah ke sulit</li>
+              <li class="flex items-center gap-1.5"><svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Anak jauh lebih percaya diri</li>
             </ul>
           </div>
           <a href="/les-matematika-purbalingga/" class="inline-flex items-center justify-between text-xs font-bold text-brand-800 hover:text-brand-900 pt-3 border-t border-slate-200">
@@ -656,8 +669,8 @@
   <section id="paket" class="py-14 sm:py-20 bg-white border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 font-bold">Pilihan Paket Sesi</span>
+      <div class="max-w-2xl text-left mb-12">
+        <span class="font-hand text-[26px] leading-none text-accent-600">Pilihan Paket Sesi</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           3 Macam Sesi Kelas Fleksibel Tiap Bulan
         </h2>
@@ -684,13 +697,13 @@
 
             <ul class="space-y-2.5 text-xs text-slate-700 mb-6">
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Pendampingan PR & tugas harian
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Pendampingan PR & tugas harian
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Penguatan konsep mapel esensial
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Penguatan konsep mapel esensial
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Pendaftaran GRATIS
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Pendaftaran GRATIS
               </li>
             </ul>
           </div>
@@ -703,13 +716,13 @@
         </div>
 
         <!-- PAKET 2: 10 SESI (RECOMMENDED) -->
-        <div class="bg-white rounded-2xl border-2 border-emerald-600 p-6 flex flex-col justify-between shadow-md relative">
-          <div class="absolute -top-3 right-6 bg-emerald-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+        <div class="bg-white rounded-2xl border-2 border-brand-600 p-6 flex flex-col justify-between shadow-md relative">
+          <div class="absolute -top-3 right-6 bg-accent-500 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
             Paling Diminati Orang Tua
           </div>
 
           <div>
-            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
+            <div class="inline-block bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
               Pilihan Terfavorit
             </div>
             
@@ -722,16 +735,16 @@
 
             <ul class="space-y-2.5 text-xs text-slate-700 mb-6">
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Semua manfaat paket 8 sesi
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Semua manfaat paket 8 sesi
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Latihan soal berkala & bedah PR
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Latihan soal berkala & bedah PR
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Evaluasi perkembangan belajar rutin
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Evaluasi perkembangan belajar rutin
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Pendaftaran GRATIS
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Pendaftaran GRATIS
               </li>
             </ul>
           </div>
@@ -759,13 +772,13 @@
 
             <ul class="space-y-2.5 text-xs text-slate-700 mb-6">
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Pendampingan intensif & tryout soal
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Pendampingan intensif & tryout soal
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Target percepatan kenaikan nilai rapor
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Target percepatan kenaikan nilai rapor
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-emerald-600 font-bold">✓</span> Pendaftaran GRATIS
+                <svg width="16" height="16" class="w-4 h-4 text-brand-600 shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Pendaftaran GRATIS
               </li>
             </ul>
           </div>
@@ -790,7 +803,7 @@
   <section id="testimoni" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="max-w-2xl text-left mb-12">
         <span class="font-hand text-[26px] leading-none text-accent-600">Ulasan Orang Tua</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Cerita Orang Tua Siswa di Purbalingga
@@ -811,13 +824,13 @@
               ★★★★★ <span class="text-slate-600 text-[11px] ml-1 font-medium">• Siswa Kelas 4 SD</span>
             </div>
             
-            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs leading-relaxed text-slate-700">
+            <p class="text-sm leading-relaxed text-slate-700">
               "Alhamdulillah, sejak les privat di Tematik Bimbel anak saya jadi lebih mandiri. Kalau ada PR matematika langsung dikerjakan bareng tutornya. Gurunya telaten banget nerangin pecahan."
-            </div>
+            </p>
           </div>
 
           <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs flex items-center justify-center">
+            <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-800 font-bold text-xs flex items-center justify-center">
               BU
             </div>
             <div>
@@ -833,9 +846,9 @@
               ★★★★★ <span class="text-slate-600 text-[11px] ml-1 font-medium">• Siswa Kelas 8 SMP</span>
             </div>
             
-            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs leading-relaxed text-slate-700">
+            <p class="text-sm leading-relaxed text-slate-700">
               "Anak saya tadinya takut sama IPA fisika rumus-rumus. Ambil paket 10 sesi sebulan, cara ngajarnya asik kayak kakak sendiri. Ulangan harian kemarin nilainya tembus 85."
-            </div>
+            </p>
           </div>
 
           <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
@@ -855,13 +868,13 @@
               ★★★★★ <span class="text-slate-600 text-[11px] ml-1 font-medium">• Siswa Kelas 6 SD</span>
             </div>
             
-            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs leading-relaxed text-slate-700">
+            <p class="text-sm leading-relaxed text-slate-700">
               "Ikut les umum kelompok bertiga bareng temen sekelasnya di Bobotsari. Anak-anak semangat belajarnya dan biayanya juga sangat terjangkau. Pendaftarannya beneran gratis."
-            </div>
+            </p>
           </div>
 
           <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center">
+            <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-800 font-bold text-xs flex items-center justify-center">
               MS
             </div>
             <div>

@@ -80,6 +80,19 @@
     img {
       height: auto;
     }
+    section[id] {
+      scroll-margin-top: 88px;
+    }
+    ::selection {
+      background: #fbd9ae;
+      color: #0f3a63;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
     body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       color: #0f172a;
@@ -300,21 +313,21 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80">
           <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
             01
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Fokus Penuh 1-on-1</h3>
           <p class="text-sm text-slate-700 leading-relaxed">Kecepatan belajar menyesuaikan daya tangkap anak. Tidak ada murid lain yang mengganggu konsentrasi belajar.</p>
         </div>
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80">
           <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
             02
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Bebas Repot Antar-Jemput</h3>
           <p class="text-sm text-slate-700 leading-relaxed">Tutor datang tepat waktu ke alamat rumah Anda di wilayah Purbalingga. Waktu anak lebih efisien untuk istirahat dan ibadah.</p>
         </div>
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200/80">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80">
           <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-800 font-bold text-sm flex items-center justify-center mb-4">
             03
           </div>
@@ -330,7 +343,7 @@
   <section class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="max-w-2xl text-left mb-12">
         <span class="font-hand text-[26px] leading-none text-accent-600">Cakupan Kurikulum</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           Cakupan Materi Les Privat SD & SMP
@@ -360,8 +373,8 @@
   <section id="paket" class="py-14 sm:py-20 bg-white border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 font-bold">Pilihan Paket Sesi</span>
+      <div class="max-w-2xl text-left mb-12">
+        <span class="font-hand text-[26px] leading-none text-accent-600">Pilihan Paket Sesi</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">
           3 Macam Sesi Kelas Fleksibel Tiap Bulan
         </h2>
